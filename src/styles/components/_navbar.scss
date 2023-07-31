@@ -1,0 +1,21 @@
+.navbar{
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    &--logo{
+        font-family: 'Ysabeau SC', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &--menu{
+        display: flex;
+        &-item{
+            font-family: 'Ysabeau SC', sans-serif;
+            cursor: pointer;
+            margin: 10px 20px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.hero{
+    width: 50%;
+    margin: 0 auto;
+    &--title{
+        font-size: 42px;
+        font-weight: 1000;
+        letter-spacing: 0.6px;
+        &-icon{
+            width: 42px;
+            height: 42px;
+            transform: translateY(5px);
+            background-image: url(https://em-content.zobj.net/thumbs/120/apple/354/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.png);
+            background-size: contain;
+            display: inline-block;
+            background-position: center;
+        }
+    }
+    &--description{
+        margin:20px 0;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #858486;
+    }
+}
