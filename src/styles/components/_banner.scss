@@ -1,3 +1,11 @@
 .banner{
-    
+    background-color: $bg-banner;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 600px;
+    &--leveler{
+        height: 76px;
+    }
 }

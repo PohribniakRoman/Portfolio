@@ -1,26 +1,137 @@
-.hero{
+.hero {
+  width: 50%;
+  margin: 0 auto;
+  user-select: none;
+  &--container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &--content{
     width: 50%;
-    margin: 0 auto;
-    &--title{
-        font-size: 42px;
-        font-weight: 1000;
-        letter-spacing: 0.6px;
-        &-icon{
-            width: 42px;
-            height: 42px;
-            transform: translateY(5px);
-            background-image: url(https://em-content.zobj.net/thumbs/120/apple/354/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.png);
-            background-size: contain;
-            display: inline-block;
-            background-position: center;
-        }
+  }
+  &--img{
+    height: 350px;
+    width: 350px;
+    animation: morph 8s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
     }
-    &--description{
-        margin:20px 0;
-        font-size: 14px;
-        line-height: 1.4;
-        letter-spacing: 1px;
-        font-weight: 500;
-        color: #858486;
+  }
+  &--title {
+    font-size: 55px;
+    color: $header-color;
+    font-weight: 1000;
+    letter-spacing: 0.6px;
+    line-height: 1.1;
+    &-icon {
+      width: 60px;
+      height: 60px;
+      transform: translateY(5px);
+      background-image: url(https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png);
+      background-size: contain;
+      display: inline-block;
+      background-position: center;
     }
+  }
+  &--description {
+    color: $description-color;
+    font-family: "Mulish", sans-serif;
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  &--icons {
+    display: flex;
+    &-item {
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 32px;
+      transition: 0.3s;
+      &:hover {
+        color: $blue;
+      }
+      &:active {
+        scale: 0.98;
+      }
+    }
+  }
+  &--tech {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    margin-top: 120px;
+    &-logo {
+      color: $header-color;
+      font-weight: 700;
+      width: 25%;
+      position: relative;
+      font-family: "Mulish", sans-serif;
+      &::after {
+        content: "";
+        top: 50%;
+        margin-left: 25px;
+        position: absolute;
+        height: 20px;
+        width: 2px;
+        transform: translateY(-50%);
+        background-color: rgba(45, 46, 50, 0.5);
+      }
+    }
+    &-stack {
+      font-size: 32px;
+      display: flex;
+      justify-content: space-around;
+      width: 75%;
+      &.icon {
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &.icon:nth-child(1) {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/732/732212.png);
+      }
+      &.icon:nth-child(2) {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/732/732190.png);
+      }
+      &.icon:nth-child(3) {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968292.png);
+      }
+      &.icon:nth-child(4) {
+        background-image: url(https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_168875.png);
+      }
+      &.icon:nth-child(6) {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968358.png);
+      }
+      &.icon:nth-child(5) {
+        background-image: url(https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png);
+      }
+    }
+  }
+}
+
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }

@@ -1,5 +1,7 @@
 .navbar{
-    margin: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +18,10 @@
             cursor: pointer;
             margin: 10px 20px;
             font-weight: 700;
+            transition: .3s;
+            &:hover{
+                color: $blue;
+            }
         }
     }
 }
