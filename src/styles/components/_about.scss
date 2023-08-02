@@ -1,0 +1,85 @@
+.about {
+  min-height: 600px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    width: 1000px;
+    display: flex;
+  }
+  &--cover {
+    width: 50%;
+    &-img {
+      width: 410px;
+      height: 350px;
+      border-radius: 17px;
+      background-image: url(https://d3kqdc25i4tl0t.cloudfront.net/articles/content/543_378726_tech.hero.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    &-container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: translate(30%, 30%);
+      width: 190px;
+      height: 190px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    &-svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotate 9s linear infinite;
+      background-size: cover;
+    }
+    &-icon {
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+    }
+  }
+  &--subtitle {
+    user-select: none;
+    color: $blue;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  &--title {
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: $header-color;
+  }
+  &--description {
+    width: 90%;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #767676;
+  }
+  &--content {
+    width: 50%;
+  }
+}
+@keyframes rotate {
+  0% {
+    rotate: 0turn;
+  }
+  100% {
+    rotate: 1turn;
+  }
+}

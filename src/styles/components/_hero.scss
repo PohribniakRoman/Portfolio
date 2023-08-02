@@ -1,25 +1,28 @@
 .hero {
-  width: 50%;
-  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   user-select: none;
-  &--container{
+  & * {outline:none;}
+  &--container {
     width: 100%;
     display: flex;
     align-items: center;
   }
-  &--content{
+  &--content {
     width: 50%;
   }
-  &--img{
+  &--img {
     height: 350px;
     width: 350px;
     animation: morph 8s ease-in-out infinite;
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: center;
     background-size: contain;
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    &-wrapper{
+    &-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -29,9 +32,10 @@
   &--title {
     font-size: 55px;
     color: $header-color;
-    font-weight: 1000;
-    letter-spacing: 0.6px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
     line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
     &-icon {
       width: 60px;
       height: 60px;
@@ -61,21 +65,21 @@
       &:hover {
         color: $blue;
       }
-      &:active {
-        scale: 0.98;
+      &:active{
+        scale: 0.92;
       }
     }
   }
   &--tech {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 80%;
     align-items: center;
     margin-top: 120px;
     &-logo {
       color: $header-color;
       font-weight: 700;
-      width: 25%;
+      width: 18%;
       position: relative;
       font-family: "Mulish", sans-serif;
       &::after {
@@ -93,45 +97,71 @@
       font-size: 32px;
       display: flex;
       justify-content: space-around;
-      width: 75%;
-      &.icon {
+      width: 82%;
+      &.item {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,.09);
+        cursor: pointer;
+        transition: .3s;
+        &:active{
+          scale: 0.92;
+        }
+      }
+      &.icon{
         width: 32px;
         height: 32px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
       }
-      &.icon:nth-child(1) {
-        background-image: url(https://cdn-icons-png.flaticon.com/512/732/732212.png);
+      &.item:nth-child(1) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/732/732212.png);
+        }
       }
-      &.icon:nth-child(2) {
-        background-image: url(https://cdn-icons-png.flaticon.com/512/732/732190.png);
+      &.item:nth-child(2) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/732/732190.png);
+        }
       }
-      &.icon:nth-child(3) {
-        background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968292.png);
+      &.item:nth-child(3) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968292.png);
+        }
       }
-      &.icon:nth-child(4) {
-        background-image: url(https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_168875.png);
+      &.item:nth-child(4) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_168875.png);
+        }
       }
-      &.icon:nth-child(6) {
-        background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968358.png);
+      &.item:nth-child(6) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968358.png);
+        }
       }
-      &.icon:nth-child(5) {
-        background-image: url(https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png);
+      &.item:nth-child(5) {
+        .hero--tech-stack.icon {
+          background-image: url(https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png);
+        }
       }
     }
   }
 }
-
 
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
   50% {
-      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
   100% {
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }

@@ -1,0 +1,119 @@
+.projects {
+  padding: 110px 0;
+  background-color: $bg-banner;
+  display: flex;
+  align-items: center;
+  &--wrappper {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &--title {
+    user-select: none;
+    color: $header-color;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  &--subtitle {
+    color: $blue;
+    user-select: none;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &--item {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+    &-cover {
+      width: 530px;
+      background-color: #000;
+      border-radius: 20px;
+      height: 360px;
+    }
+    &-content {
+      width: 300px;
+      margin: 0 auto;
+    }
+    &-title {
+      user-select: none;
+      text-align: center;
+      color: $header-color;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 20px;
+    }
+    &-tech {
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 18px;
+      gap: 10px;
+      margin: 20px;
+      &_icon {
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
+        padding: 10px 13px;
+        font-family: "Mulish", sans-serif;
+      }
+    }
+    &-controls {
+      display: flex;
+      font-weight: 500;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+      color: $header-color;
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      margin-top: 30px;
+      & a {
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        transition: 0.3s;
+        align-items: center;
+        &:hover {
+          color: $blue;
+        }
+        &:active {
+          scale: 0.95;
+        }
+      }
+      & svg {
+        font-size: 25px;
+        margin-left: 5px;
+      }
+    }
+    &-description {
+      cursor: context-menu;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.4;
+      color: #767676;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: none;
+      margin-bottom: 10px;
+    }
+  }
+}

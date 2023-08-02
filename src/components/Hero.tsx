@@ -22,14 +22,26 @@ export const Hero:React.FC = () => {
         </div>
         <div className="hero--tech">
             <h3 className="hero--tech-logo">Tech Stack</h3>
-            <div className="hero--tech-stack">
-                <div className="hero--tech-stack icon"/>
-                <div className="hero--tech-stack icon"/>
-                <div className="hero--tech-stack icon"/>
-                <div className="hero--tech-stack icon"/>
-                <div className="hero--tech-stack icon"/>
-                <div className="hero--tech-stack icon"/>
-            </div>
+            <ul className="hero--tech-stack">
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+                <li className="hero--tech-stack item">
+                    <div className="hero--tech-stack icon"></div>
+                </li>
+            </ul>
         </div>
     </section>
 }

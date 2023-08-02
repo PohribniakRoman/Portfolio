@@ -1,0 +1,42 @@
+@media (max-width:1050px) {
+    .hero{
+        width: 550px;
+    }
+    .hero--tech{
+        width: 100%;
+        margin: 90px auto 0;
+        flex-direction: column;
+        &-stack{
+            width: 100%;
+        }
+        &-logo{
+            text-align: center;
+            padding-bottom: 30px;
+            &::after{
+                width: 100px;
+                height: 1px;
+                left: 50%;
+                margin: 0;
+                transform: translateX(-50%);
+                margin-top: 7px;
+            }
+        }
+    }
+    .hero--container{
+        flex-direction: column-reverse;
+    }
+
+    .hero--content{
+        width: 100%;
+        text-align: center;
+    }
+    .hero--icons{
+        justify-content: center;
+    }
+    .hero--img-wrapper {
+        margin: 30px;
+    }
+    .hero--img-wrapper{
+        width: 100%;
+    }
+}
