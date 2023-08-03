@@ -104,3 +104,87 @@
         width: 100%;
     }
 }
+@media (max-width:620px) {
+    .navbar{
+        justify-content: center;
+        &--logo{
+            font-weight: 900;
+            z-index: 2;
+            font-size: 24px;
+        }
+        &--menu{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transition: .3s;
+            transform: translate(50%,-50%);
+            background-color: #fff;
+            width: 100vw;
+            height: 100vh;
+            height: 100vsh;
+            position: fixed;
+            &-icon{
+                cursor: pointer;
+                width: 25px;
+                height: 25px;
+                right: 20px;
+                position: absolute;
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 50%;
+                z-index: 2;
+                transform: translateY(-50%);
+                &.active{
+                    & i{
+                        background-color: rgba($color: #000000, $alpha: 0.0);
+                        &::before{
+                            rotate: calc(1turn - 0.125turn);
+                        }
+                        &::after{
+                            rotate: 0.125turn;
+                        }
+                        &::before,&::after{
+                            margin: 0;
+                        }
+                    }
+                }
+                & i{
+                    transition: .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25px;
+                    height: 2px;
+                    background-color: black;
+                    &::before{
+                        margin-top: -10px;
+                    }
+                    &::after{
+                        margin-bottom: -10px;
+                    }
+                    &::before,&::after{
+                        transition: .3s;
+                        left: 0;
+                        content: "";
+                        position: absolute;
+                        width: 25px;
+                        height: 2px;
+                        background-color: black;
+                        right: 20px;                    
+                    }
+                }
+            }
+            &-item{
+                font-size: 24px;
+            }
+            &.active{
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}

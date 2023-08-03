@@ -17,6 +17,9 @@
     }
     &--menu{
         display: flex;
+        &-icon{
+            display: none;
+        }
         &-item{
             font-family: 'Ysabeau SC', sans-serif;
             cursor: pointer;
