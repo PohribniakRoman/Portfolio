@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   &__wrapper {
-    width: 1000px;
+    width: $container-size;
     display: flex;
   }
   &--cover {

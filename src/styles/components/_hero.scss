@@ -1,10 +1,11 @@
 .hero {
-  width: 1000px;
+  width: $container-size;
   display: flex;
   flex-direction: column;
   justify-content: center;
   user-select: none;
   & * {outline:none;}
+  padding: 50px 0;
   &--container {
     width: 100%;
     display: flex;
