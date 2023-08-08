@@ -39,6 +39,10 @@
       margin-bottom: 60px;
     }
     &-cover {
+      animation: upndown ease 15s infinite;
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+      background-size: 100%;
       width: 530px;
       background-color: #000;
       border-radius: 20px;
@@ -115,5 +119,17 @@
       text-transform: none;
       margin-bottom: 10px;
     }
+  }
+}
+
+@keyframes upndown {
+  0%{
+    background-position: 50% 0%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 50% 0%;
   }
 }

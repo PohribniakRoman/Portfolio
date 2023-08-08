@@ -40,8 +40,9 @@
       background-size: cover;
     }
     &-icon {
-      width: 60px;
-      height: 60px;
+      transform: translate(0,-1px);
+      width: 90px;
+      height: 90px;
       background-size: cover;
     }
   }

@@ -15,7 +15,7 @@ export const About:React.FC = () => {
             <div className="about--content">
                 <h3 className="about--subtitle">about me</h3>
                 <h1 className="about--title">A dedicated Front-end Developer based in Kyiv, Ukraine 📍</h1>
-                <p className="about--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet facere praesentium modi. Iure facere voluptates labore aliquam! Labore soluta hic dolor doloribus. Molestiae iste impedit vero maiores repellat qui eveniet, hic quod, fugiat vitae tempore provident cupiditate. Nostrum, ratione repellat.</p>
+                <p className="about--description">For more than four years I have been studying the world of web development, during this time I have made many interesting non-commercial projects. Also, during this time I have learned a lot of different technologies, you will see a list of fundamental ones on my GitHub. I am currently looking for a job, I hope to find a great friendly team and interesting experience.</p>
             </div>
         </div>
     </section>
