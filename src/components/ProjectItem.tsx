@@ -9,7 +9,7 @@ export interface ProjectsItem{
 
 export const ProjectItem:React.FC<ProjectsItem> = ({variant="straight",item}) => {
     return <div className="projects--item" style={{flexDirection:variant==="straight"?"row":"row-reverse"}}>
-    <a href="" target="_blank" className="projects--item-cover" style={{backgroundImage:`url(${item.cover})`}}/>
+    <a href={item.demo} target="_blank" className="projects--item-cover" style={{backgroundImage:`url(${item.cover})`}}/>
     <div className="projects--item-content">
         <h2 className="projects--item-title">{item.name}</h2>
         <p className="projects--item-description">{item.description}</p>

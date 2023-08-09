@@ -6,7 +6,7 @@ import { ProjectItem } from "./ProjectItem"
 const projects = [
 {
     name:"Gallery 🏞️",
-    description:"",
+    description:"The web application is built without using third-party APIs. When a page is loaded, all media elements are loaded into the browser cache. All animations were written manually.",
     demo:"https://gallery-pohribniakroman.vercel.app/",
     git:"https://github.com/PohribniakRoman/Gallery",
     stack:["React","Redux","SCSS"],
@@ -14,7 +14,7 @@ const projects = [
 },
 {
     name:"Meal-App 🥩",
-    description:"",
+    description:"A web application with many interactions, such as a draggable border between the cart and store, ingredient hover effect, search and billing system.",
     demo:"https://delivery-app-pohribniakroman.vercel.app/",
     git:"https://github.com/PohribniakRoman/Meal-App",
     stack:["React","Redux","SCSS","API's"],
