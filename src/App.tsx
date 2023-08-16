@@ -8,12 +8,12 @@ import AOS from "aos";
 
 
 function App() {
-  document.addEventListener('DOMContentLoaded',()=>AOS.init({
+  AOS.init({
     offset: 200,
     duration: 600,
     easing: "ease-in-sine",
     delay: 100,
-  }))
+  })
   return (
     <>
       <Navbar/>
