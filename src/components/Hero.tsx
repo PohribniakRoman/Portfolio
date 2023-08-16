@@ -2,7 +2,8 @@ import { AiFillLinkedin,AiFillGithub } from "react-icons/ai";
 import avatar from "../assets/avatar.png";
 
 export const Hero:React.FC = () => {
-    return <section className="hero">
+
+    return <section className="hero" data-aos="flip-right">
         <div className="hero--container">
             <div className="hero--content">
                 <h1 className="hero--title">Front-End React <br/>Developer <div className="hero--title-icon"/></h1>
@@ -20,7 +21,7 @@ export const Hero:React.FC = () => {
                 <div className="hero--img" style={{backgroundImage:`url(${avatar})`}}></div>
             </div>
         </div>
-        <div className="hero--tech">
+        <div className="hero--tech" >
             <h3 className="hero--tech-logo">Tech Stack</h3>
             <ul className="hero--tech-stack">
                 <li className="hero--tech-stack item">

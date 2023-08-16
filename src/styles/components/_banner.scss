@@ -1,7 +1,8 @@
-.banner{
-    background-color: $bg-banner;
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    min-height: 600px;
+.banner {
+  overflow: hidden;
+  background-color: $bg-banner;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 600px;
 }

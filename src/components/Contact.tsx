@@ -5,9 +5,9 @@ import {BsMailbox2} from "react-icons/bs"
 export const Contact:React.FC = () => {
     return <section className="contact">
         <div className="contact--wrapper">
-            <h3 className="contact--subtitle">contact</h3>
-            <h1 className="contact--title">Don't be shy! Hit me up! 👇</h1>
-            <ul className="contact--container">
+            <h3 className="contact--subtitle" data-aos="zoom-in-left">contact</h3>
+            <h1 className="contact--title" data-aos="zoom-in-left">Don't be shy! Hit me up! 👇</h1>
+            <ul className="contact--container" data-aos="zoom-in-right">
                 <li className="contact--container-item">
                     <span>
                         <FaMapLocationDot/>

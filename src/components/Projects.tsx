@@ -25,8 +25,8 @@ const projects = [
 export const Projects:React.FC = () => {
     return <section className="projects">
         <div className="projects--wrappper">
-            <h3 className="projects--subtitle">portfolio</h3>
-            <h1 className="projects--title">Each project is a unique piece of development 🧩</h1>
+            <h3 className="projects--subtitle" data-aos="zoom-in-left">portfolio</h3>
+            <h1 className="projects--title" data-aos="zoom-in-left">Each project is a unique piece of development 🧩</h1>
             {projects.map((data,index)=>{
                 return <ProjectItem key={index} item={data} variant={index % 2 === 0?"straight":"reverse"}/>
             })}
