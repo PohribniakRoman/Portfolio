@@ -4,8 +4,16 @@ import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
 import { Navbar } from "./components/Navbar"
 import { Projects } from "./components/Projects"
+import AOS from "aos";
+
 
 function App() {
+  document.addEventListener('DOMContentLoaded',()=>AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-sine",
+    delay: 100,
+  }))
   return (
     <>
       <Navbar/>
