@@ -1,6 +1,7 @@
 import mealCover from "../assets/meal-app.jpg";
 import galleryCover from "../assets/gallery.jpg";
 import colorPickerCover from "../assets/colorpicker.jpg";
+import oldPortfolio from "../assets/oldportfolio.png";
 
 import { ProjectItem } from "./ProjectItem"
 
@@ -28,6 +29,14 @@ const projects = [
     git:"https://github.com/PohribniakRoman/Color-Picker",
     stack:["React","Redux","SCSS","TypeScript"],
     cover:colorPickerCover
+},
+{
+    name:"Old Portfolio ⌚",
+    description:"Just an old portfolio with the same old projects.",
+    demo:"https://pohribniakroman.github.io/Portfolio-Template/",
+    git:"https://github.com/PohribniakRoman/Portfolio-Template",
+    stack:["React","SCSS"],
+    cover:oldPortfolio
 },
 ]
 
