@@ -1,7 +1,7 @@
 import mealCover from "../assets/meal-app.jpg";
 import galleryCover from "../assets/gallery.jpg";
 import colorPickerCover from "../assets/colorpicker.jpg";
-import oldPortfolio from "../assets/oldportfolio.png";
+import typoGame from "../assets/typo-game.png";
 
 import { ProjectItem } from "./ProjectItem"
 
@@ -31,12 +31,12 @@ const projects = [
     cover:colorPickerCover
 },
 {
-    name:"Old Portfolio ⌚",
-    description:"Just an old portfolio with the same old projects.",
-    demo:"https://pohribniakroman.github.io/Portfolio-Template/",
-    git:"https://github.com/PohribniakRoman/Portfolio-Template",
-    stack:["React","SCSS"],
-    cover:oldPortfolio
+    name:"Typo Game ⌚",
+    description:"Game where you can improve your writing skills and compete with your friends! Written from scratch by hand without additional packages.",
+    demo:"https://typo-game.vercel.app/",
+    git:"https://github.com/PohribniakRoman/Typo-Game",
+    stack:["React","Redux","SCSS","TypeScript"],
+    cover:typoGame
 },
 ]
 
